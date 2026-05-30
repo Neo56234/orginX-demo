@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "originx-backend"
+version = "0.1.0"
+description = "OriginX — Video Provenance Intelligence Platform"
+requires-python = ">=3.11"
+
+dependencies = [
+    # API framework
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "python-multipart>=0.0.9",
+
+    # Database
+    "sqlalchemy>=2.0.29",
+    "psycopg2-binary>=2.9.9",
+    "alembic>=1.13.1",
+    "pgvector>=0.2.5",
+
+    # Task queue
+    "rq>=1.16.2",
+    "redis>=5.0.3",
+
+    # Settings
+    "pydantic-settings>=2.2.1",
+    "python-dotenv>=1.0.1",
+
+    # HTTP client
+    "httpx>=0.27.0",
+    "aiohttp>=3.9.5",
+
+    # Video processing
+    "yt-dlp>=2024.4.9",
+    "ffmpeg-python>=0.2.0",
+
+    # Image processing
+    "Pillow>=10.3.0",
+    "imagehash>=4.3.1",
+    "opencv-python-headless>=4.9.0.80",
+
+    # AI / ML
+    "easyocr>=1.7.1",
+    "ultralytics>=8.2.0",
+    "transformers>=4.40.0",
+    "torch>=2.2.2",
+    "torchvision>=0.17.2",
+    "sentence-transformers>=2.7.0",
+    "langdetect>=1.0.9",
+
+    # Claude API
+    "anthropic>=0.28.0",
+
+    # Card generation (HTML → PNG)
+    "playwright>=1.44.0",
+    "jinja2>=3.1.4",
+
+    # Utilities
+    "python-slugify>=8.0.4",
+    "shortuuid>=1.0.13",
+    "structlog>=24.1.0",
+    "pyacoustid",
+]
+
+[project.optional-dependencies]
+all = []
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.6",
+    "httpx>=0.27.0",
+    "ruff>=0.4.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

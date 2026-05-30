@@ -1,0 +1,185 @@
+{
+  "_note": "All video_url values are verified YouTube URLs from official news channels. These are stable and will not be deleted. Run run_pipeline.ps1 after docker compose up.",
+
+  "videos": [
+    {
+      "id": 1,
+      "priority": "PRIMARY — use this first in demo",
+      "title": "Pakistan: TLP Islamist Party Protest in Lahore — shared as Bangladesh communal attack",
+      "video_url": "https://www.youtube.com/watch?v=d2UKqr0otFQ",
+      "source_channel": "WION / Reuters (international news — stable)",
+      "claimed_context": "বাংলাদেশে ধর্মীয় সংখ্যালঘুদের উপর ভয়াবহ হামলা চলছে — পুলিশ হামলাকারীদের সহযোগিতা করছে। Horrific attack on religious minorities in Bangladesh — police supporting attackers.",
+      "expected_verdict": "mismatch",
+      "pipeline_signals": {
+        "linguist": "Urdu text detected on banners and crowd placards — Urdu is not used in Bangladesh",
+        "geolocator": "CLIP will classify as Pakistani urban environment. Architecture of Lahore visible. Pakistani police uniform style.",
+        "chronologist": "Wayback Machine / YouTube upload date will not match 'ongoing Bangladesh 2024' claim",
+        "tracer": "Earlier appearances may be found from the original news coverage"
+      },
+      "actual_origin": {
+        "country": "Pakistan",
+        "city": "Lahore",
+        "description": "TLP (Tehreek-e-Labbaik Pakistan) Islamist party protest in Lahore. Thousands gathered, at least 3 policemen killed. Nothing to do with Bangladesh."
+      },
+      "demo_script_line": "The Linguist detected Urdu text on crowd banners. Bangladesh doesn't use Urdu. The Geolocator matched the architecture and crowd patterns to Lahore, Pakistan.",
+      "category": "communal",
+      "region": "dhaka",
+      "investigation_id": "b16b4855-0234-48a9-8180-2f78c63bed1c"
+    },
+    {
+      "id": 2,
+      "priority": "BACKUP 1 — use if primary fails",
+      "title": "Geo News: Protest in Karachi, protesters attack police — shared as Bangladesh unrest",
+      "video_url": "https://www.youtube.com/watch?v=agE0TOD_6Go",
+      "source_channel": "Geo News Pakistan (official channel — very stable)",
+      "claimed_context": "বাংলাদেশে বিক্ষোভকারীরা পুলিশের উপর হামলা চালাচ্ছে — পরিস্থিতি নিয়ন্ত্রণের বাইরে। Protesters attacking police in Bangladesh — situation out of control.",
+      "expected_verdict": "mismatch",
+      "pipeline_signals": {
+        "linguist": "Urdu text visible on Geo News lower-thirds and street banners",
+        "geolocator": "Karachi streets, CNGs absent (Bangladesh uses CNGs everywhere), Pakistani auto-rickshaw style",
+        "chronologist": "Geo News branding gives a dateable reference"
+      },
+      "actual_origin": {
+        "country": "Pakistan",
+        "city": "Karachi",
+        "description": "Street protest in Karachi covered by Geo News. Protesters attacked police. Not Bangladesh."
+      },
+      "demo_script_line": "Geo News lower-thirds show Urdu script. Geolocator matched Karachi street patterns with 81% confidence.",
+      "category": "communal",
+      "region": "dhaka",
+      "investigation_id": "d16c3370-5134-4c1d-b166-7255666f0778"
+    },
+    {
+      "id": 3,
+      "priority": "BACKUP 2 — Karachi road block (Geo News)",
+      "title": "Geo News: Protest in Karachi blocks main road — shared as Bangladesh blockade",
+      "video_url": "https://www.youtube.com/watch?v=0lZn5DG8Jb8",
+      "source_channel": "Geo News Pakistan (official channel)",
+      "claimed_context": "সারা বাংলাদেশে রাস্তা অবরোধ — যানজটে স্থবির ঢাকা। Nationwide road blockade in Bangladesh — Dhaka paralyzed.",
+      "expected_verdict": "mismatch",
+      "pipeline_signals": {
+        "linguist": "Urdu text in Geo News tickers and crowd signs",
+        "geolocator": "Karachi road infrastructure, Pakistani vehicles"
+      },
+      "actual_origin": {
+        "country": "Pakistan",
+        "city": "Karachi",
+        "description": "Karachi road blockade by protesters covered by Geo News."
+      },
+      "demo_script_line": "Geo News Urdu tickers and Karachi road layout detected. This is Pakistan, not Bangladesh.",
+      "category": "politics",
+      "region": "dhaka",
+      "investigation_id": "b345e0fa-6e9c-4aa3-9ca3-dfca70e8df1b"
+    },
+    {
+      "id": 4,
+      "priority": "BACKUP 3 — DISASTER category (India flood)",
+      "title": "India Today: Assam and Bihar floods — shared as Bangladesh floods 2024",
+      "video_url": "https://www.youtube.com/watch?v=y_II154BPkU",
+      "source_channel": "India Today (official Indian news channel — very stable)",
+      "claimed_context": "বাংলাদেশে ভয়াবহ বন্যা — ফেনী, কুমিল্লা, নোয়াখালী সম্পূর্ণ ডুবে গেছে ২০২৪। Catastrophic flood in Bangladesh 2024 — Feni, Cumilla, Noakhali completely submerged.",
+      "expected_verdict": "mismatch",
+      "pipeline_signals": {
+        "linguist": "Hindi/Devanagari text on India Today lower-thirds and Bengali text notably absent",
+        "geolocator": "Assam/Bihar landscape, Indian infrastructure style, Indian boat types",
+        "chronologist": "India Today video metadata will show Indian upload context"
+      },
+      "actual_origin": {
+        "country": "India",
+        "city": "Assam / Bihar",
+        "description": "India Today ground report on Assam and Bihar flooding. Not Bangladesh."
+      },
+      "demo_script_line": "The Linguist detected Hindi script in the news tickers. India Today branding. Geolocator matched Assam riverine landscape — not Bangladesh's Feni or Cumilla.",
+      "category": "disaster",
+      "region": "chittagong",
+      "investigation_id": "b1527f03-787d-4cf1-b2e1-713518b97346"
+    },
+    {
+      "id": 5,
+      "priority": "BACKUP 4 — DISASTER category (Assam floods alternate)",
+      "title": "Assam Floods scary visuals — Guwahati inundated — shared as Bangladesh",
+      "video_url": "https://www.youtube.com/watch?v=0OHTAltLrm4",
+      "source_channel": "Indian news channel (Assam flood coverage 2024)",
+      "claimed_context": "বাংলাদেশে ভয়াবহ বন্যা — নৌকায় চলছে উদ্ধার অভিযান। Catastrophic floods in Bangladesh — boats deployed for rescue operations.",
+      "expected_verdict": "mismatch",
+      "pipeline_signals": {
+        "linguist": "Hindi/Assamese text in news graphics",
+        "geolocator": "Guwahati urban layout, Brahmaputra riverine context"
+      },
+      "actual_origin": {
+        "country": "India",
+        "city": "Guwahati, Assam",
+        "description": "Assam flood coverage. Guwahati streets flooded."
+      },
+      "demo_script_line": "Geolocator detected Brahmaputra riverine landscape and Guwahati architecture. This is India's Assam, not Bangladesh.",
+      "category": "disaster",
+      "region": "chittagong",
+      "investigation_id": "916bbb00-f875-4b07-8d73-c3e273443589"
+    },
+    {
+      "id": 6,
+      "priority": "BACKUP 5 — RELIGIOUS PROTEST (Lahore)",
+      "title": "Geo News: Religious party protest in Lahore — shared as Bangladesh communal rally",
+      "video_url": "https://www.youtube.com/watch?v=dUKu_gvwr-0",
+      "source_channel": "Geo News Pakistan (official)",
+      "claimed_context": "বাংলাদেশে ধর্মীয় সমাবেশ — লক্ষ লক্ষ মানুষের ঢল রাস্তায়। Religious gathering in Bangladesh — millions flooding the streets.",
+      "expected_verdict": "mismatch",
+      "pipeline_signals": {
+        "linguist": "Urdu text in Geo News branding and crowd placards",
+        "geolocator": "Lahore cityscape"
+      },
+      "actual_origin": {
+        "country": "Pakistan",
+        "city": "Lahore",
+        "description": "Religious party protest in Lahore covered by Geo News."
+      },
+      "demo_script_line": "Urdu placards and Lahore architecture. This is Lahore, not Dhaka.",
+      "category": "communal",
+      "region": "nationwide",
+      "investigation_id": "7f943f8f-91da-4ef3-a578-151e24911c94"
+    },
+    {
+      "id": 7,
+      "priority": "DELIBERATE FAILURE — must include in demo",
+      "title": "Prothom Alo: Dhaka AI Traffic Camera report — genuine Bangladesh video",
+      "video_url": "https://www.youtube.com/watch?v=WHmWSt3TGos",
+      "source_channel": "Prothom Alo (Bangladesh's #1 newspaper — very stable)",
+      "claimed_context": "ঢাকায় আজকের একটি সাধারণ ঘটনার ভিডিও — এটি বাংলাদেশের সাম্প্রতিক ঘটনা। A routine event in Dhaka today — recent Bangladesh occurrence.",
+      "expected_verdict": "insufficient_evidence",
+      "pipeline_signals": {
+        "linguist": "Detects Bangla text → confirms Bangladesh origin (no mismatch)",
+        "geolocator": "Dhaka cityscape, CNGs, Bangla signage → confirms Bangladesh",
+        "chronologist": "Recent Prothom Alo upload — no contradicting archive records",
+        "adjudicator": "All signals say Bangladesh + no prior misuse record → Confidence < 70% → Insufficient Evidence"
+      },
+      "actual_origin": {
+        "country": "Bangladesh",
+        "city": "Dhaka",
+        "description": "Prothom Alo report: 'এআই ক্যামেরায় প্রথম ১৩ দিনে কত মামলা হলো' — AI traffic camera enforcement in Dhaka. 100% genuine Bangladesh content."
+      },
+      "demo_script_line": "When we cannot find contradicting evidence, we say so honestly. All agents confirm Bangladesh. Confidence 34% — not enough to make a definitive claim. Insufficient Evidence — recommend manual verification.",
+      "category": "politics",
+      "region": "dhaka",
+      "investigation_id": "b7e68e0f-b039-4a3f-b18e-8c02a61acead"
+    }
+  ],
+
+  "summary": {
+    "total_videos": 7,
+    "verified_urls": 7,
+    "needs_manual_url": 0,
+    "verified_url_ids": [1, 2, 3, 4, 5, 6, 7],
+    "recommended_demo_order": [1, 7],
+    "primary_demo_video": 1,
+    "insufficient_evidence_video": 7,
+    "source_channels": {
+      "1": "WION/Reuters — https://www.youtube.com/watch?v=d2UKqr0otFQ",
+      "2": "Geo News Pakistan — https://www.youtube.com/watch?v=agE0TOD_6Go",
+      "3": "Geo News Pakistan — https://www.youtube.com/watch?v=0lZn5DG8Jb8",
+      "4": "India Today — https://www.youtube.com/watch?v=y_II154BPkU",
+      "5": "Indian news — https://www.youtube.com/watch?v=0OHTAltLrm4",
+      "6": "Geo News Pakistan — https://www.youtube.com/watch?v=dUKu_gvwr-0",
+      "7": "Prothom Alo Bangladesh — https://www.youtube.com/watch?v=WHmWSt3TGos"
+    }
+  }
+}

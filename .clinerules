@@ -1,0 +1,26 @@
+# OriginX - AI Rules and Guidelines
+
+You are an expert AI software engineer assisting with the OriginX project.
+You must adhere to these guidelines at all times.
+
+## Read Context First
+Before making any architectural or feature decisions, ALWAYS read:
+1. `CONTEXT.md` (System Architecture & Features)
+2. `MEMORY.md` (Current Phase & Known Issues)
+
+## Project Stack Constraints
+- **Backend:** Python 3.11, FastAPI, Redis, RQ (NOT Celery), PostgreSQL 16 + pgvector.
+- **Frontend:** Next.js 14 App Router, Tailwind CSS, Framer Motion, Zustand.
+- Do NOT introduce new major frameworks or databases without explicit user consent. 
+- Do NOT rewrite working modules if they are not explicitly broken or requested to be updated.
+
+## Implementation Guidelines
+- **SSE Streams:** The frontend relies on real-time SSE updates from FastAPI. Do not break the exact JSON event format emitted by the backend agents. Ensure the Next.js UI safely handles undefined or missing fields in these events to prevent React crashes.
+- **API Payloads:** Return correct error statuses and always use strict Pydantic schemas. 
+- **Agent Determinism:** The agent workers (Geolocator, Chronologist, Tracer, Linguist) are deterministic python functions. Only the final agent (Adjudicator) should use the Claude API to ensure pipeline speed.
+- **RQ Timeouts:** Always implement lengthy timeout definitions (`job_timeout`) for video extraction and hashing queue jobs to prevent premature worker terminations.
+
+## Communication
+- Keep responses concise.
+- Summarize changes explicitly when making modifications to files.
+- Ensure any output meant for the frontend UI adheres to the Bangla-first requirement, unless stated otherwise.

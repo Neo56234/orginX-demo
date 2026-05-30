@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OriginX</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 320px;
+      background: #0A0E1A;
+      color: #E8ECF7;
+      font-family: 'Courier New', monospace;
+      padding: 20px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+    .logo span { color: #3D8BFF; }
+    .tagline {
+      font-size: 10px;
+      color: #5A6378;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+    .status-card {
+      background: #13192A;
+      border: 1px solid #2A3354;
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .status-label {
+      font-size: 10px;
+      color: #5A6378;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+    .status-value {
+      font-size: 20px;
+      font-weight: 900;
+      color: #FF3B5C;
+    }
+    .status-value.green { color: #00D67E; }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #3D8BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      margin-bottom: 8px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn:hover { background: #2d7aee; }
+    .btn.secondary {
+      background: transparent;
+      border: 1px solid #2A3354;
+      color: #8B95A9;
+    }
+    .btn.secondary:hover { border-color: #3D8BFF; color: #3D8BFF; }
+    .divider {
+      border: none;
+      border-top: 1px solid #2A3354;
+      margin: 14px 0;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: #5A6378;
+      margin-bottom: 6px;
+    }
+    .info-row span:last-child { color: #8B95A9; }
+  </style>
+</head>
+<body>
+  <div class="logo">Origin<span>X</span></div>
+  <div class="tagline">VIDEO PROVENANCE INTELLIGENCE</div>
+
+  <div class="status-card">
+    <div class="status-label">ACTIVE MONITORING</div>
+    <div class="status-value green" id="statusValue">ON</div>
+  </div>
+
+  <div class="status-card">
+    <div class="status-label">FLAGGED ON THIS PAGE</div>
+    <div class="status-value" id="flaggedCount">—</div>
+  </div>
+
+  <hr class="divider" />
+
+  <a href="http://localhost:3000" target="_blank" class="btn">
+    OPEN ORIGINX →
+  </a>
+  <a href="http://localhost:3000/dashboard" target="_blank" class="btn secondary">
+    VIRAL MONITOR
+  </a>
+
+  <hr class="divider" />
+
+  <div class="info-row">
+    <span>Extension version</span>
+    <span>1.0.0</span>
+  </div>
+  <div class="info-row">
+    <span>API endpoint</span>
+    <span>localhost:8000</span>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

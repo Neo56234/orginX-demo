@@ -1,0 +1,98 @@
+[
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_bd_sangbad_24",
+    "display_name": "বাংলাদেশ সংবাদ ২৪",
+    "total_shared": 312,
+    "flagged_count": 241,
+    "credibility_score": 0.08
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_dhaka_breaking",
+    "display_name": "Dhaka Breaking News",
+    "total_shared": 189,
+    "flagged_count": 156,
+    "credibility_score": 0.12
+  },
+  {
+    "platform": "youtube",
+    "source_identifier": "yt_bd_news_live",
+    "display_name": "BD News Live",
+    "total_shared": 98,
+    "flagged_count": 72,
+    "credibility_score": 0.18
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_viral_bd",
+    "display_name": "Viral BD Videos",
+    "total_shared": 445,
+    "flagged_count": 421,
+    "credibility_score": 0.04
+  },
+  {
+    "platform": "youtube",
+    "source_identifier": "yt_bd_truth_media",
+    "display_name": "BD Truth Media",
+    "total_shared": 67,
+    "flagged_count": 61,
+    "credibility_score": 0.06
+  },
+  {
+    "platform": "youtube",
+    "source_identifier": "yt_khulna_tv",
+    "display_name": "খুলনা টিভি অনলাইন",
+    "total_shared": 145,
+    "flagged_count": 118,
+    "credibility_score": 0.11
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_sylhet_news_bd",
+    "display_name": "সিলেট নিউজ বিডি",
+    "total_shared": 234,
+    "flagged_count": 178,
+    "credibility_score": 0.13
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_prothom_alo",
+    "display_name": "প্রথম আলো",
+    "total_shared": 2100,
+    "flagged_count": 3,
+    "credibility_score": 0.99
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_daily_star_bd",
+    "display_name": "The Daily Star",
+    "total_shared": 1890,
+    "flagged_count": 2,
+    "credibility_score": 0.99
+  },
+  {
+    "platform": "youtube",
+    "source_identifier": "yt_somoy_tv",
+    "display_name": "Somoy TV",
+    "total_shared": 1200,
+    "flagged_count": 8,
+    "credibility_score": 0.93
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_satyer_sondhan",
+    "display_name": "সত্যের সন্ধানে",
+    "total_shared": 89,
+    "flagged_count": 4,
+    "credibility_score": 0.94
+  },
+  {
+    "platform": "facebook",
+    "source_identifier": "fb_mymensing_news",
+    "display_name": "ময়মনসিংহ নিউজ ২৪",
+    "total_shared": 178,
+    "flagged_count": 134,
+    "credibility_score": 0.15
+  }
+]

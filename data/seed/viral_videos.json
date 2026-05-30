@@ -1,0 +1,167 @@
+[
+  {
+    "claim_text_bn": "ঢাকায় হিন্দু মন্দিরে হামলা ও আগুন দেওয়া হচ্ছে",
+    "claim_text": "Hindu temple being attacked and burned in Dhaka",
+    "video_url": "https://www.facebook.com/watch/?v=1001",
+    "thumbnail_url": null,
+    "share_count": 412000,
+    "region": "dhaka",
+    "category": "communal",
+    "detected_at": "2026-05-25T08:14:00Z",
+    "is_featured": true
+  },
+  {
+    "claim_text_bn": "পদ্মা সেতুতে বড় ফাটল — সেতু ভেঙে পড়ার আশঙ্কা",
+    "claim_text": "Large crack in Padma Bridge — risk of collapse",
+    "video_url": "https://www.facebook.com/watch/?v=1002",
+    "thumbnail_url": null,
+    "share_count": 1240000,
+    "region": "nationwide",
+    "category": "disaster",
+    "detected_at": "2026-05-24T22:45:00Z",
+    "is_featured": true
+  },
+  {
+    "claim_text_bn": "পাকিস্তানি সেনাবাহিনী বাংলাদেশে প্রবেশ করেছে",
+    "claim_text": "Pakistani military has entered Bangladesh",
+    "video_url": "https://www.facebook.com/watch/?v=1003",
+    "thumbnail_url": null,
+    "share_count": 892000,
+    "region": "nationwide",
+    "category": "politics",
+    "detected_at": "2026-05-24T11:30:00Z",
+    "is_featured": true
+  },
+  {
+    "claim_text_bn": "সিলেটে হিন্দু-মুসলিম সংঘর্ষে ১২ জন নিহত",
+    "claim_text": "12 killed in Hindu-Muslim clash in Sylhet",
+    "video_url": "https://www.facebook.com/watch/?v=1004",
+    "thumbnail_url": null,
+    "share_count": 234000,
+    "region": "sylhet",
+    "category": "communal",
+    "detected_at": "2026-05-23T16:20:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "নতুন ভাইরাস বাংলাদেশে ছড়িয়ে পড়েছে — সরকার গোপন করছে",
+    "claim_text": "New virus spreading in Bangladesh — government hiding it",
+    "video_url": "https://www.facebook.com/watch/?v=1005",
+    "thumbnail_url": null,
+    "share_count": 178000,
+    "region": "nationwide",
+    "category": "health",
+    "detected_at": "2026-05-23T09:00:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "চট্টগ্রামে ভূমিকম্পে বহুতল ভবন ধ্বংস",
+    "claim_text": "Multi-storey building destroyed by earthquake in Chittagong",
+    "video_url": "https://www.facebook.com/watch/?v=1006",
+    "thumbnail_url": null,
+    "share_count": 156000,
+    "region": "chittagong",
+    "category": "disaster",
+    "detected_at": "2026-05-22T14:10:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "ঢাকায় র‍্যাবের গুলিতে নিরীহ ছাত্র নিহত",
+    "claim_text": "Innocent student killed by RAB bullets in Dhaka",
+    "video_url": "https://www.facebook.com/watch/?v=1007",
+    "thumbnail_url": null,
+    "share_count": 567000,
+    "region": "dhaka",
+    "category": "politics",
+    "detected_at": "2026-05-22T07:30:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "ভারত থেকে মুসলিমদের তাড়িয়ে দেওয়া হচ্ছে — গণহত্যা চলছে",
+    "claim_text": "Muslims being expelled from India — genocide ongoing",
+    "video_url": "https://www.facebook.com/watch/?v=1008",
+    "thumbnail_url": null,
+    "share_count": 521000,
+    "region": "nationwide",
+    "category": "communal",
+    "detected_at": "2026-05-21T18:00:00Z",
+    "is_featured": true
+  },
+  {
+    "claim_text_bn": "রাজশাহীতে পুলিশ নিরীহ মানুষকে পিটিয়ে হত্যা করেছে",
+    "claim_text": "Police beat innocent people to death in Rajshahi",
+    "video_url": "https://www.facebook.com/watch/?v=1009",
+    "thumbnail_url": null,
+    "share_count": 98000,
+    "region": "rajshahi",
+    "category": "politics",
+    "detected_at": "2026-05-21T12:15:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "খুলনায় মাদ্রাসায় আগুন — শিক্ষার্থীরা পুড়ে মারা গেছে",
+    "claim_text": "Madrasa on fire in Khulna — students burned to death",
+    "video_url": "https://www.facebook.com/watch/?v=1010",
+    "thumbnail_url": null,
+    "share_count": 89000,
+    "region": "khulna",
+    "category": "communal",
+    "detected_at": "2026-05-20T20:30:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "বরিশালে ফেরি ডুবে ২০০ যাত্রী নিখোঁজ",
+    "claim_text": "Ferry sinks in Barisal — 200 passengers missing",
+    "video_url": "https://www.facebook.com/watch/?v=1011",
+    "thumbnail_url": null,
+    "share_count": 203000,
+    "region": "barisal",
+    "category": "disaster",
+    "detected_at": "2026-05-20T06:45:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "ময়মনসিংহে হিন্দু পরিবারকে বাড়ি থেকে বের করে দেওয়া হয়েছে",
+    "claim_text": "Hindu family evicted from home in Mymensingh",
+    "video_url": "https://www.facebook.com/watch/?v=1012",
+    "thumbnail_url": null,
+    "share_count": 145000,
+    "region": "mymensingh",
+    "category": "communal",
+    "detected_at": "2026-05-19T15:00:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "গাজায় ইসরায়েলি বোমা হামলার ভিডিও — বলা হচ্ছে বাংলাদেশের",
+    "claim_text": "Gaza bombing video falsely shared as Bangladesh",
+    "video_url": "https://www.facebook.com/watch/?v=1013",
+    "thumbnail_url": null,
+    "share_count": 678000,
+    "region": "nationwide",
+    "category": "communal",
+    "detected_at": "2026-05-19T10:00:00Z",
+    "is_featured": true
+  },
+  {
+    "claim_text_bn": "ঢাকার হাসপাতালে অক্সিজেন সংকট — রোগীরা মরছে",
+    "claim_text": "Oxygen crisis in Dhaka hospitals — patients dying",
+    "video_url": "https://www.facebook.com/watch/?v=1014",
+    "thumbnail_url": null,
+    "share_count": 67000,
+    "region": "dhaka",
+    "category": "health",
+    "detected_at": "2026-05-18T14:00:00Z",
+    "is_featured": false
+  },
+  {
+    "claim_text_bn": "আওয়ামী লীগের সমাবেশে গুলি — ৫ জন নিহত",
+    "claim_text": "Shooting at Awami League rally — 5 dead",
+    "video_url": "https://www.facebook.com/watch/?v=1015",
+    "thumbnail_url": null,
+    "share_count": 312000,
+    "region": "nationwide",
+    "category": "politics",
+    "detected_at": "2026-05-18T08:20:00Z",
+    "is_featured": false
+  }
+]
